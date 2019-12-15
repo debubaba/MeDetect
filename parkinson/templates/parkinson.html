@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Parkinson's Disease</title>
+    <!-- <script type="text/javascript">
+    //
+    //   function funcs(){
+    //     AVFF();
+    //   }
+    //
+    //   function AVFF(){
+    //     var max = document.getElementById("MDVP:Fhi").value;
+    //     console.log(max);
+    //     var min = document.getElementById("MDVP:Flo").value;
+    //
+    //     var avg = (max + min) / 2;
+    //     console.log(avg);
+    //
+    //   }
+    // </script> -->
+  </head>
+  <body>
+    <!-- Jai Mata Di -->
+    <div class="mainbanner">
+      
+      <div class="diseasetitle">
+        <div class="maintitle">
+          <h1>MedDetect</h1>
+          </div>
+          <h1>PARKINSON'S</h1><br>
+          <h2>DISEASE</h2>
+        </div>
+    </div>
+
+    <form class="{{ url_for('predict')}}" method="post" id="form">
+       <input type="number" name="MDVP:Fo" id="MDVP:Fo" placeholder="Average Vocal Fundamental Frequency (Hz)" ><br>
+       <input type="number" name="MDVP:Fhi" id="MDVP:Fhi" placeholder="Maximum Vocal Fundamental Frequency (Hz)" ><br>
+       <input type="number" name="MDVP:Flo" id="MDVP:Flo" placeholder="Minimum Vocal Fundamental Frequency (Hz)" ><br>
+       <h1 id="avff"></h1>
+       <br><br><br>
+       <h1>Measures of variation in Fundamental Frequency</h1>
+       <input type="number" name="MDVP:Jitter(%)" placeholder="MDVP:Jitter(%)" ><br>
+       <input type="number" name="MDVP:Jitter(Abs)" placeholder="MDVP:Jitter(Abs)" ><br>
+       <input type="number" name="MDVP:RAP" placeholder="MDVP:RAP" ><br>
+       <input type="number" name="MDVP:PPQ" placeholder="MDVP:PPQ" ><br>
+       <input type="number" name="MDVP:DDP" placeholder="MDVP:DDP" ><br>
+       <br><br><br>
+       <h1>Measures of variation in amplitude</h1>
+       <input type="number" name="MDVP:Shimmer" placeholder="MDVP:Shimmer" ><br>
+       <input type="number" name="MDVP:Shimmer(dB)" placeholder="MDVP:Shimmer(dB)" ><br>
+       <input type="number" name="Shimmer:APQ3" placeholder="Shimmer:APQ3" ><br>
+       <input type="number" name="Shimmer:APQ5" placeholder="Shimmer:APQ5" ><br>
+       <input type="number" name="MDVP:APQ" placeholder="MDVP:APQ" ><br>
+       <input type="number" name="Shimmer:DDP" placeholder="Shimmer:DDP" ><br>
+      <br><br><br>
+       <h1>Measures of ratio of noise to tonal components in the voice</h1>
+       <input type="number" name="NHR" placeholder="NHR" ><br>
+       <input type="number" name="HNR" placeholder="HNR" ><br>
+       <br><br><br>
+       <h1>Nonlinear dynamical complexity measures</h1>
+       <input type="number" name="RPDE" placeholder="RPDE" ><br>
+       <input type="number" name="D2" placeholder="D2" ><br>
+       <br><br><br>
+       <input type="number" name="DFA" placeholder="DFA" ><br>
+       <h1>Nonlinear measures of fundamental frequency variation</h1>
+       <input type="number" name="spread1" placeholder="spread1" ><br>
+       <input type="number" name="spread2" placeholder="spread2" ><br>
+       <input type="number" name="PPE" placeholder="PPE" ><br>
+
+       <button onclick="funcs()">Submit</button>
+
+
+    </form>
+    <div class="Result">
+      {{ prediction_text }}
+    </div>
+  </body>
+</html>
