@@ -3,7 +3,8 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('code.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
+int_features = []
 
 @app.route('/')
 def home():
@@ -20,7 +21,7 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template('breast.html', prediction_text='Chances of Breast Cancer are $ {} %'.format(output))
+    return render_template('breast.html', prediction_text='Chances of Breast Cancer are $ {}'.output)
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():

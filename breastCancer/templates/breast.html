@@ -36,41 +36,22 @@
     </div>
 
     </div>
-    <!--Input for ML
+    <!--Input for ML-->
     <form action="{{ url_for('predict')}}" method="post" class="formbreast">
-      <input type="number" name="radius" placeholder="Radius" required="required">
-      <input type="number" name="texture" placeholder="Texture" required="required">
-      <input  type="number"  name="perimeter" placeholder="Perimeter" required="required">
-      <input type="number"  name="area" placeholder="Area" required="required">
-      <input type="number" name="smoothness" placeholder="Smoothness" required="required">
-      <input type="number" name="concavity" placeholder="Concavity" required="required">
-      <input type="number" name="concavepts" placeholder="Concave Points" required="required">
-      <input type="number" name="symmetry" placeholder="Symmetry" required="required">
-      <input type="number" name="fractaldim" placeholder="Fractal Dimension" required="required">
-      <input type="number" name="compactn" placeholder="Compactness" required="required">
+      <input type="number" name="radius" placeholder="Radius" required="required" step=".01"><br>
+      <input type="number" name="texture" placeholder="Texture" required="required" step=".01"><br>
+      <input  type="number"  name="perimeter" placeholder="Perimeter" required="required" step=".01"><br>
+      <input type="number"  name="area" placeholder="Area" required="required" step=".01"><br>
+      <input type="number" name="smoothness" placeholder="Smoothness" required="required" step=".01"><br>
+      <input type="number" name="concavity" placeholder="Concavity" required="required" step=".01"><br>
+      <input type="number" name="concavepts" placeholder="Concave Points" required="required" step=".01"><br>
+      <input type="number" name="symmetry" placeholder="Symmetry" required="required" step=".01"><br>
+      <input type="number" name="fractaldim" placeholder="Fractal Dimension" required="required" step=".01"><br>
+      <input type="number" name="compactn" placeholder="Compactness" required="required" step=".01">
       <button type="submit" name="button">Submit</button>
       </form>
 
-      {{ prediction_text }}-->
-      <div class="form-style-5">
-<form action="{{ url_for('predict')}}" method="post" class="formbreast">
-<fieldset>
-  <input type="number" name="radius" placeholder="Radius" required="required">
-  <input type="number" name="texture" placeholder="Texture" required="required">
-  <input  type="number"  name="perimeter" placeholder="Perimeter" required="required">
-  <input type="number"  name="area" placeholder="Area" required="required">
-  <input type="number" name="smoothness" placeholder="Smoothness" required="required">
-  <input type="number" name="concavity" placeholder="Concavity" required="required">
-  <input type="number" name="concavepts" placeholder="Concave Points" required="required">
-  <input type="number" name="symmetry" placeholder="Symmetry" required="required">
-  <input type="number" name="fractaldim" placeholder="Fractal Dimension" required="required">
-  <input type="number" name="compactn" placeholder="Compactness" required="required">
-</fieldset>
-<fieldset>
-<button type="submit" name="button">Submit</button>
-</form>
-</div>
-{{ prediction_text }}
+      {{ prediction_text }}
 
   </body>
 </html>
