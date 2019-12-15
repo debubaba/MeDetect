@@ -1,4 +1,4 @@
-<b>MeDetect</b>
+<h1>MeDetect</h1>
 
 <p>The Project aims to estimate whether a patient is suffering from one of the following diseases:
 
