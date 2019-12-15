@@ -1,11 +1,11 @@
 <h1>MeDetect</h1>
 
-<p>The Project aims to estimate whether a patient is suffering from one of the following diseases:
+The Project aims to estimate whether a patient is suffering from one of the following diseases:
 
-1.Parkinson's Disease
-2.Diabetes
-3.Brain Hemorrhage
-4.Breast Cancer</p>
+1.Parkinson's Disease (xgBoost)
+2.Diabetes (Random Forest Classification)
+3.Brain Hemorrhage (CNN)
+4.Breast Cancer (ANN)
 
 The Estimation is done on the basis of various ML models uniquely built for each disease.
 The ML Models is then incorporated with an interactive Front-End Design which can be used by patients  
