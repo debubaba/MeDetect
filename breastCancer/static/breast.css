@@ -1,0 +1,55 @@
+body{
+  overflow-x: hidden;
+}
+
+#logo{
+  height: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: -1.5rem;
+}
+#book{
+  height: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.heading h1{
+  padding-top: 3.75rem;
+  font-size: 3.5rem;
+  padding-bottom: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+.headText{
+  padding-left: 8rem;
+  padding-right: 12rem;
+}
+.diseasename{
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 8rem;
+  padding-right: 12rem;
+  padding-top: 4rem;
+}
+.sdname{
+  margin-top: -2rem;
+  padding-bottom: 4rem;
+}
+.mainBanner{
+  background-image: url("resourcesbreast/breastback.jpg");
+  background-size: cover;
+  height:30rem;
+}
+.hintro{
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 1rem
+}
+.pintro{
+  max-width: 90rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 5rem;
+  padding-bottom: 6rem;
+}
+
+.formbreast
